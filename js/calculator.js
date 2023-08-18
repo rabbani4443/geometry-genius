@@ -58,6 +58,26 @@ function calculateParallelogramArea(){
 
 }
 
+// ==================  04. Rhombus Card ================
+// ==================  04. Rhombus Card ================
+function calculateRhombusArea(){
+    const diagonal1 = getInputField('rhombus-diagonal1');
+    const diagonal2 = getInputField('rhombus-diagonal2');
+
+    if(isNaN(diagonal1) || isNaN(diagonal2)){
+        alert('Please insert number');
+        return;
+    }
+
+    const area = 0.5 * diagonal1 * diagonal2;
+    const areaTwoDecimal =area.toFixed(2);
+
+    setElementInnerText('rhombus-area',areaTwoDecimal );
+
+    addToCalculationEntry ('Rhombus', areaTwoDecimal);
+
+}
+
 // Get All Input Field Function 
 function getInputField(inputField){
    const inputFieldId = document.getElementById(inputField);

@@ -69,7 +69,7 @@ input[type=number] {
     </nav>
    </header>
    <main>
-    <section class="flex gap-4 px-10">
+    <section class="flex gap-4 flex-col-reverse md:flex-row px-10">
         <div class="w-9/12 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
            <!--  ==================  01. Triangle Card ================ -->
            <!--  ==================  01. Triangle Card ================ -->
@@ -130,12 +130,32 @@ input[type=number] {
               </div>
             </div>
           </div>
-              
+           <!--  ==================  04. Rhombus Card ================ -->
+           <!--  ==================  04. Rhombus Card ================ -->
+           <div class="card bg-base-100 shadow-xl border-gray-300 border ">
+            <div class="px-5 pt-5 w-full"><img src="../images/rhombus.png" alt="rhombus"  class=""/></div>
+            <div class="card-body text-center">
+              <h2 class="card-title block">Rhombus</h2>
+              <p class="py-2">Area (A) =0.5 X d<sub>1</sub> X d<sub>2</sub></p>
+              <div class="flex w-full">
+                <input type="number" name="" id="rhombus-diagonal1" placeholder="Diagonal" class="border bg-gray-200 text-lg w-24 px-2 rounded-sm">
+                <span class="pl-1 pr-2 font-semibold">cm</span>
+                <input type="number" name="" id="rhombus-diagonal2" placeholder="Diagonal" class="border bg-gray-200 text-lg w-24 px-2 rounded-sm">
+                <span class="pl-1 font-semibold">cm</span>
+              </div>
+              <h1 class="font-semibold text-lg py-2">Area: <span id="rhombus-area">00</span> cm<sup>2</sup></h1>
+              <div class="card-actions justify-end">
+                <button  class="btn btn-primary w-full" onclick="calculateRhombusArea()">Buy Now</button>
+              </div>
+            </div>
+          </div>
+
+
         </div>
 
-        <div id="" class="w-1/4 border border-gray-300 shadow-xl rounded-lg pt-5">
+        <div id="" class="md:w-1/4 border border-gray-300 shadow-xl rounded-lg pt-4 h-2/4 md:py-10">
             <h1  class="text-3xl font-semibold text-center" >Area Calculator</h1>
-            <div id="calculator-entry" class=" px-4">
+            <div id="calculator-entry" class=" pl-4">
             </div>
         </div>
     </section>
