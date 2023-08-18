@@ -77,6 +77,25 @@ function calculateRhombusArea(){
     addToCalculationEntry ('Rhombus', areaTwoDecimal);
 
 }
+// ==================  05. Pentagon Card ================
+// ==================  05. Pentagon Card ================
+function calculatePentagonArea(){
+    const perimeter = getInputField('pentagon-perimeter');
+    const apothem = getInputField('pentagon-apothem');
+
+    if(isNaN(perimeter) || isNaN(apothem)){
+        alert('Please insert number');
+        return;
+    }
+
+    const area = 0.5 * perimeter * apothem;
+    const areaTwoDecimal = area.toFixed(2);
+
+    setElementInnerText('pentagon-area',areaTwoDecimal );
+
+    addToCalculationEntry ('Pentagon', areaTwoDecimal);
+
+}
 
 // Get All Input Field Function 
 function getInputField(inputField){
