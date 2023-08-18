@@ -40,8 +40,21 @@ function calculateTriangleArea(){
 // ==================== 03. Parallelogram Card ====================
 
 function calculateParallelogramArea(){
+    const base = getInputField('parallelogram-base');
+    const height = getInputField('parallelogram-height');
 
-    console.log('hsdfsdf')
+    if(isNaN(base) || isNaN(height)){
+        alert('Please insert number');
+        return;
+    }
+
+    const area = base * height;
+    const areaTwoDecimal =area.toFixed(2)
+
+    setElementInnerText('parallelogram-area', areaTwoDecimal);
+
+    addToCalculationEntry('Parallelogram',areaTwoDecimal)
+    // console.log (areaTwoDecimal)
 
 }
 
