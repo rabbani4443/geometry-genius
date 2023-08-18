@@ -96,6 +96,25 @@ function calculatePentagonArea(){
     addToCalculationEntry ('Pentagon', areaTwoDecimal);
 
 }
+// ==================  06. Ellipse Card ================
+// ==================  06. Ellipse Card ================
+function calculateEllipseArea(){
+    const axis = getInputField('ellipse-axis');
+    const axis2 = getInputField('ellipse-axis2');
+
+    if(isNaN(axis) || isNaN(axis2)){
+        alert('Please insert number');
+        return;
+    }
+
+    const area = 3.1416 * axis * axis2;
+    const areaTwoDecimal = area.toFixed(2);
+
+    setElementInnerText('ellipse-area',areaTwoDecimal );
+
+    addToCalculationEntry ('Ellipse', areaTwoDecimal);
+
+}
 
 // Get All Input Field Function 
 function getInputField(inputField){
