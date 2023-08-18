@@ -70,13 +70,13 @@ input[type=number] {
    </header>
    <main>
     <section class="flex gap-4 px-10">
-        <div class="w-9/12 grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div class="w-9/12 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
            <!--  ==================  01. Triangle Card ================ -->
            <!--  ==================  01. Triangle Card ================ -->
-            <div class="card bg-base-100 shadow-xl border-gray-300 border hover:bg-red-200 pt-4">
-                <figure><img src="../images/triangle.png" alt="Triangle" /></figure>
-                <div class="card-body">
-                  <h2 class="card-title">Triangle</h2>
+            <div class="card bg-base-100 shadow-xl border-gray-300 border pt-4 ">
+              <div class="px-5 pt-5 w-full flex justify-center"><img src="../images/triangle.png" alt="rectangle"  class="w-9/12"/></div>
+                <div class="card-body text-center">
+                  <h2 class="card-title block">Triangle</h2>
                   <p>Area (A) = 0.5 X b X h</p>
                   <div class="flex w-full">
                     <input type="number" name="" id="triangle-base" placeholder="Base" class="border bg-gray-200 text-lg w-24 px-2 rounded-sm">
@@ -93,15 +93,16 @@ input[type=number] {
 
            <!--  ==================  02. Rectangle Card ================ -->
            <!--  ==================  02. Rectangle Card ================ -->
-            <div class="card bg-base-100 shadow-xl border-gray-300 border hover:bg-red-200 pt-4">
-                <figure><img src="../images/rectangle.png" alt="rectangle" /></figure>
-                <div class="card-body">
-                  <h2 class="card-title">Rectangle</h2>
+            <div class="card bg-base-100 shadow-xl border-gray-300 border ">
+                <div class="px-5 pt-5 w-full"><img src="../images/rectangle.png" alt="rectangle"  class=""/></div>
+                <div class="card-body text-center">
+                  <h2 class="card-title block">Rectangle</h2>
                   <p>Area (A) = 0.5 X b X h</p>
+                  <!-- <p>Area (A) = W  X  l</p> -->
                   <div class="flex w-full">
-                    <input type="number" name="" id="rectangle-base" placeholder="Base" class="border bg-gray-200 text-lg w-24 px-2 rounded-sm">
+                    <input type="number" name="" id="rectangle-width" placeholder="Width" class="border bg-gray-200 text-lg w-24 px-2 rounded-sm">
                     <span class="pl-1 pr-2 font-semibold">cm</span>
-                    <input type="number" name="" id="rectangle-hight" placeholder="Height" class="border bg-gray-200 text-lg w-24 px-2 rounded-sm">
+                    <input type="number" name="" id="rectangle-length" placeholder="Length" class="border bg-gray-200 text-lg w-24 px-2 rounded-sm">
                     <span class="pl-1 font-semibold">cm</span>
                   </div>
                   <h1 class="font-semibold text-lg">Area: <span id="rectangle-area">00</span> cm<sup>2</sup></h1>
@@ -110,6 +111,25 @@ input[type=number] {
                   </div>
                 </div>
               </div>
+           <!--  ==================  03. parallelogram Card ================ -->
+           <!--  ==================  03. Parallelogram Card ================ -->
+           <div class="card bg-base-100 shadow-xl border-gray-300 border ">
+            <div class="px-5 pt-5 w-full"><img src="../images/rectangle.png" alt="rectangle"  class=""/></div>
+            <div class="card-body text-center">
+              <h2 class="card-title block">Rectangle</h2>
+              <p>Area (A) =  b X h</p>
+              <div class="flex w-full">
+                <input type="number" name="" id="rectangle-base" placeholder="Base" class="border bg-gray-200 text-lg w-24 px-2 rounded-sm">
+                <span class="pl-1 pr-2 font-semibold">cm</span>
+                <input type="number" name="" id="rectangle-height" placeholder="Height" class="border bg-gray-200 text-lg w-24 px-2 rounded-sm">
+                <span class="pl-1 font-semibold">cm</span>
+              </div>
+              <h1 class="font-semibold text-lg">Area: <span id="rectangle-area">00</span> cm<sup>2</sup></h1>
+              <div class="card-actions justify-end">
+                <button  class="btn btn-primary w-full" onclick="calculateParallelogramArea()">Buy Now</button>
+              </div>
+            </div>
+          </div>
               
         </div>
 

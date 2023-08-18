@@ -20,9 +20,30 @@ function calculateTriangleArea(){
 // ==================== 02. Rectangle Card ====================
 
  function calculateRectangleArea(){
+    const width = getInputField('rectangle-width');
+    const length = getInputField('rectangle-length');
 
+    if(isNaN (width) || isNaN(length)){
+        alert('Please insert number');
+        return;
+    }
+    const area = width * length;
+    const areaTwoDecimal = area.toFixed(2);
+
+    setElementInnerText('rectangle-area', areaTwoDecimal);
+
+    addToCalculationEntry ('Rectangle', areaTwoDecimal);
+    
  }
 
+// ==================== 03. Parallelogram Card ====================
+// ==================== 03. Parallelogram Card ====================
+
+function calculateParallelogramArea(){
+
+    console.log('hsdfsdf')
+
+}
 
 // Get All Input Field Function 
 function getInputField(inputField){
